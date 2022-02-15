@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" 
+      content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" type="text/css" href="pizza.css">
+      <script src="modernizr.custom.05819.js"></script>
+   <title>Pizza Order</title>
+</head>
+<body>
+   <p>You can place your order for pick up or delivery via online or you can reach us at 555-555-5555.</p>
+
+<article>
+      <h2>Pizza Order Form</h2>
+      <div id="errorMessage"></div>
+      <form novalidate="novalidate">
+         <fieldset id="custInfo">
+            <legend>Customer Information</legend>
+            <label for="nameinput">Name</label>
+            <input type="text" id="nameinput" name="name" required="required" />
+            <label for="addrinput">Street Address</label>
+            <input type="text" id="addrinput" name="address" required="required" />
+            <label for="cityinput">City</label>
+            <input type="text" id="cityinput" name="city" required="required" />
+            <label for="emailinput">Email</label>
+            <input type="email" id="emailinput" name="email" required="required" />
+            <label for="phoneinput">Phone</label>
+            <input type="text" id="phoneinput" name="phone" required="required" />
+         </fieldset>
+         <fieldset id="deliveryInfo">
+            <legend>Delivery Information</legend>
+            <label for="nameinput">Name</label>
+            <input type="text" id="nameinput" name="name" required="required" />
+            <label for="addrinput">Street Address</label>
+            <input type="text" id="addrinput" name="address" required="required" />
+            <label for="cityinput">City</label>
+            <input type="text" id="cityinput" name="city" required="required" />
+            <label for="emailinput">Email</label>
+            <input type="email" id="emailinput" name="email" required="required" />
+            <label for="phoneinput">Phone</label>
+            <input type="text" id="phoneinput" name="phone" required="required" />
+         </fieldset>
+         <fieldset id="orderinfo">
+            <fieldset>
+            <legend>Order</legend>
+            </fieldset>
+            <fieldset>
+            <legend>Size</legend>
+               <select id="size" name="size" required="required">
+                  <option value="small">Small</option>
+                  <option value="medium">Medium</option>
+                  <option value="large">Large</option>
+               </select>
+            </fieldset>
+            <fieldset id="crustbox">
+               <legend>Crust</legend>
+               <input type="radio" name="crust" id="thin" value="Thin" />
+               <label for="thin">Thin Crust</label>
+               <input type="radio" name="crust" id="thick" value="Deep Dish" />
+               <label for="thick">Deep Dish</label>
+               <input type="radio" name="crust" id="stuffed" value="Thin" />
+               <label for="stuffed">Cheese Stuffed Crust</label>
+            </fieldset>
+            <fieldset id="sizebox">
+            </fieldset>
+            <fieldset id="toppingbox">
+               <legend>Topping(s)</legend>
+               <input type="radio" id="pepperoni" name="topping1" value="Pepperoni" />
+               <label for="pepperoni">Pepperoni</label>
+               <input type="radio" id="sausage" name="topping2" value="Sausage" />
+               <label for="sausage">Sausage</label>
+               <input type="radio" id="grnpepper" name="topping3" value="Green Peppers" />
+               <label for="grnpepper">Green Peppers</label>
+               <input type="radio" id="jalapeno" name="topping4" value="jalapeno" />
+               <label for="jalapeno">Jalape&ntilde;os</label>
+               <input type="radio" id="ham" name="topping5" value="ham" />
+               <label for="ham">Ham</label>
+               <input type="radio" id="pineapple" name="topping7" value="pineapple" />
+               <label for="pineapple">Pineapple</label>
+            </fieldset>
+            <fieldset id="payment">
+               <legend>Payment Type</legend>
+               <input type="checkbox" id="cash" name="payment" value="cash" />
+               <label for="cash">Cash</label>
+               <input type="checkbox" id="credit" name="payment" value="credit" />
+               <label for="credit">Credit Card</label>
+            </fieldset>
+            <fieldset id="paymentInfo">
+               <legend>Payment Information</legend>
+               <label for="name">Name</label>
+               <input type="text" id="name" name="name" required="required" />
+               <label for="cardnum">Card Number</label>
+               <input type="text" id="cardnum" name="cardnum" required="required" />
+               <label for="exp">Exp Date</label>
+               <input type="text" id="ex" name="exp" required="required" />
+               <label for="cvv">CVV</label>
+               <input type="text" id="cvv" name="CVVValue" required="required" />
+               <div id="errorMessage"></div>
+            </fieldset>  
+         <fieldset id="submitbutton">
+            <input type="submit" id="submitBtn" value="Add to Cart" />
+         </fieldset>
+      </form>
+   </article>
+   <script src="script.js"></script>
+</body>
+</html>
